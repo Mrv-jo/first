@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding-top: 400px;
+  background: #8E8E8E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90vh;
+}
+
+/*-- Step 2 --*/
+/*Basic style for cube and side*/
+
+.cube {
+  transform-style: preserve-3d;
+  transition: 0.4s;
+  transform: rotateX(36deg) rotateY(-35deg);
+}
+.face1, .face2, .face3, .face4, .face5, .face6 {
+  width: 10em;
+  height: 10em;
+  transition: 0.10s;
+  position: absolute;
+}
+
+/*Style all side individually*/
+.face1 {
+  background: #eee;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+
+.face2 {
+  background: #181818;
+}
+.face3 {
+  background:#E2DA3F;
+  transform: rotateY(90deg);
+  transform-origin: left;
+}
+.face4 {
+  background: #373940;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+}
+.face5 {
+  background: #686d76;
+  transform: rotateY(-90deg);
+  transform-origin: right;
+}
+.face6 {
+  background: #19d6a8;
+  transform: translate3d(0,0,-10em);
+}
