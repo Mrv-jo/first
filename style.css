@@ -8,8 +8,8 @@ body {
   min-width: 90vh;
 }
 
-/*-- Step 2 --*/
-/*Basic style for cube and side*/
+
+/*style for cube and side*/
 
 .cube {
   transform-style: preserve-3d;
